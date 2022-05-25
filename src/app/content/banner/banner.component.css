@@ -1,0 +1,81 @@
+.banner-part{
+    height: 850px;
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+   background: url(../../../assets/images/banner-bg1.jpg) center no-repeat;
+   background-size: cover;
+   overflow: hidden;
+   position: relative;
+}
+
+.text{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px auto;
+}
+.text p{
+    width: 50%;
+    text-align: center;
+    color: rgb(228, 228, 228);
+    font-weight: 300;
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+}
+.text h1{
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+    color: white;
+}
+span{
+    color: rgb(255, 179, 80);
+}
+
+.banner-silde-image{
+    position: absolute;
+    right: -142px;
+    top: 165px;
+  
+
+}
+
+.btns{
+    margin-top: 50px;
+}
+
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button{
+    background: transparent;
+    border: 1px solid #76a713;
+    padding: 12px 50px ;
+    margin: 15px;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.mat-button::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 00%;
+    height: 100%;
+    background:#ff7800;
+    content: '';
+    transition: 0.5s;
+}
+
+.mat-button:hover::after {
+    width: 100%;
+    transform: translateX(100%);
+  }
+
+  .mat-button:hover{
+      border: 1px solid #ff7800;;
+  }

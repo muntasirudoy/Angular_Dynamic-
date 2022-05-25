@@ -1,0 +1,22 @@
+.table-header{
+    background: #76a713;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.table-content{
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(37, 37, 37);
+    padding: 10px;
+    margin: 0;
+    border: 1px solid rgb(240, 240, 240);
+}

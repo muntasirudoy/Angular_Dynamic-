@@ -1,0 +1,44 @@
+
+<div class="container" style="margin-top: 150px; ">
+  <mat-grid-list cols="5" rowHeight="5:1">
+    <mat-grid-tile>
+      <p class="table-header">Product Name</p>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <p class="table-header">Description</p>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <p class="table-header">Price</p>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <p class="table-header">Qunatity</p>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <p class="table-header">Action</p>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list cols="5" rowHeight="5:1" *ngFor="let item of products">
+    <mat-grid-tile>
+      <p class="table-content">{{item.title}}</p>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <p class="table-content">{{item.description}}</p>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <p class="table-content">${{item.price}}.00</p>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <p class="table-content">{{item.quantity}}</p>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <p class="table-content">Action</p>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+</div> 
+
+
+
+
+

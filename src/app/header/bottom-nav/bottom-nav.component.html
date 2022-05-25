@@ -1,0 +1,41 @@
+<div class="bottom-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="left logo">
+                   <img src="../../../assets/images/logo1.png" alt="i">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="right menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a routerLink="/products" >Products</a></li>
+                        <li><a href="">Vegetables</a></li>
+                        <li><a href="">About</a></li>
+                        <li mat-button [matMenuTriggerFor]="menu"><a href="#">Shop</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>Item 1</button>
+                        <button mat-menu-item>Item 2</button>
+                      </mat-menu>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="cart-wish" >
+                    <mat-icon routerLink="/cart" MatBadgeSize = 'small' matBadge={{totalItem}} matBadgeColor="warn" (click)="show(dropdown)"><i class="bi bi-cart3" ></i></mat-icon>
+                    <mat-icon MatBadgeSize = 'small' matBadge="9" matBadgeColor="warn"><i class="bi bi-heart"></i></mat-icon>
+                    <i class="bi bi-search"></i>
+                </div>
+
+
+               <!-- <div [ngClass]="dropdown ? 'showDropdown' : 'hideDropdown'">
+                   hello
+               </div> -->
+
+            </div>
+        </div>
+    </div>
+</div>
